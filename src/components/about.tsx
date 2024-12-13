@@ -11,7 +11,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-24 max-w-[52rem] text-center leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -30,13 +30,13 @@ export default function About() {
         My core stack includes{" "}
         <span className="font-medium">React, Next.js, Node.js,</span> and{" "}
         <span className="font-medium">MongoDB</span>. I am also familiar with TypeScript, Material UI, and other modern tools. 
-        I'm always looking to learn new technologies and stay up-to-date with the latest in web development. 
-        Currently, I'm seeking a <span className="font-medium">full-time position</span> as a software developer to contribute my technical expertise to forward-thinking projects and cutting-edge development.
+        I m always looking to learn new technologies and stay up-to-date with the latest in web development. 
+        Currently, I m seeking a <span className="font-medium">full-time position</span> as a software developer to contribute my technical expertise to forward-thinking projects and cutting-edge development.
       </p>
 
       <p>
         <span className="italic">Outside of coding</span>, I enjoy playing football, which keeps me active and energized. 
-        I’m always eager to expand my knowledge in various fields, and I find that staying curious helps me bring fresh perspectives to my work.
+        I m always eager to expand my knowledge in various fields, and I find that staying curious helps me bring fresh perspectives to my work.
       </p>
     </motion.section>
   );

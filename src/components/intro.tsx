@@ -11,7 +11,6 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import peerimage from "@/public/peer.jpg"
 
-
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
@@ -64,7 +63,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-semibold">Hello, I’m Peer Mohammad.</span> I'm a{" "}
+        <span className="font-semibold">Hello, I m Peer Mohammad.</span> I m a{" "}
         <span className="font-semibold">full-stack developer</span> with{" "}
         <span className="font-semibold">strong expertise</span> in{" "}
         <span className="font-semibold">backend development</span>. I enjoy building{" "}
@@ -94,8 +93,9 @@ export default function Intro() {
         </Link>
 
         <a
+          href="/Peer_Mohammad_Resume.pdf"
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          download={"./PeerResume"}
+          download
         >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />

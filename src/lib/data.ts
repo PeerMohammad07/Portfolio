@@ -86,28 +86,28 @@ export const projectsData = [
   {
     title: "Dream Buy - Real Estate Application",
     description:
-      "Developed a full-featured real estate platform allowing users to buy, sell, and rent properties with advanced search, location-based suggestions, and integrated communication tools.",
+      "Developed a full-featured real estate platform allowing users to buy, sell, and rent properties.",
     tags: ["React", "Node.js", "MongoDB", "Socket.io", "Mapbox API"],
     imageUrl: dreamBuyImg, 
   },
   {
     title: "Klassic Empire Furniture (KEF)",
     description:
-      "Innovative e-commerce platform for furniture with features like online payments, wishlist, admin dashboard, and property zoom, built using MVC architecture.",
+    "E-commerce furniture platform with online payments, wishlist, admin dashboard, and property zoom, built with MVC architecture.",
     tags: ["Node.js", "MongoDB", "Razorpay", "AWS", "EJS"],
     imageUrl: kefImg, 
   },
   {
     title: "Snap Gallery",
     description:
-      "An image management platform allowing users to upload, edit, delete, and rearrange images with drag-and-drop functionality using DND Kit.",
+    "An image management platform with drag-and-drop functionality for uploading, editing, and organizing images.",
     tags: ["React", "Node.js", "MongoDB", "DND Kit"],
     imageUrl: snapGalleryImg, 
   },
   {
     title: "Blog Management System",
     description:
-      "A blog platform with features like creating, editing, and deleting blogs, with secure JWT-based authentication and Redux for state management.",
+    "A blog platform with JWT authentication, Redux, and CRUD features for blogs.",
     tags: ["React", "Node.js", "MongoDB", "JWT", "Redux"],
     imageUrl: blogManagementImg, 
   }

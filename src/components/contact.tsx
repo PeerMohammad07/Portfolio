@@ -5,13 +5,13 @@ import { sendEmail } from "@/actions/sendEmail";
 import { useState } from "react";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
-import SubmitBtn from "./submit-btn";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
 
-  const [isLoading, setIsLoading] = useState(false);
-
+  const [loading, setIsLoading] = useState(false);
+  console.log(loading);
+  
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {    
     e.preventDefault();
     setIsLoading(true);
@@ -73,7 +73,7 @@ export default function Contact() {
           required
           maxLength={5000}
         />
-        <button>Submit</button>
+        <button className="dark:bg-gray-300 bg-gray-400 dark:text-black text-white rounded-xl py-2">Submit</button>
       </form>
     </motion.section>
   );

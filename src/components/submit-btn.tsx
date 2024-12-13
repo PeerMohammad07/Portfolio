@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import { FaPaperPlane } from "react-icons/fa";
 
-export default function SubmitBtn({isLoading}:any) {
+interface SubmitBtnProps {
+  isLoading: boolean;
+}
+
+export const SubmitBtn: React.FC<SubmitBtnProps> = ({isLoading}) =>{
   const [pending, setPending] = useState(false);
 
-  const handleSubmit = async (e:any) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setPending(true);
 

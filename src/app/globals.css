@@ -2,14 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Default variables for light theme */
 html {
-  --line-color: #e5e7eb;
+  --background: #ffffff;
+  --foreground: #000000;
 }
 
+/* Dark theme variables */
 html.dark {
-  --line-color: rgba(255, 255, 255, 0.2);
+  --background: #000000;
+  --foreground: #ffffff;
 }
 
-.borderBlack {
-  @apply border border-black/10;
+body {
+  background-color: var(--background);
+  color: var(--foreground);
 }
